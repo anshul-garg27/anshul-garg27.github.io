@@ -1,12 +1,487 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="">
+
 <head>
+    <title>Resume - Anshul Garg</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Anshul Garg</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Resume | Anshul Garg" />
+    <meta name="keywords" content="Anshul Garg, Software Engineer, Backend, Java, Python, Golang, Spring Boot, Kafka, Resume" />
+
+    <meta name="author" content="Anshul Garg">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="1 month">
+
+    <meta property="og:title" content="Resume | Anshul Garg">
+    <meta property="og:site_name" content="Resume|Anshul Garg">
+    <meta property="og:url" content="https://anshul-garg27.github.io">
+    <meta property="og:description" content="Resume | Anshul Garg">
+    <meta property="og:type" content="website">
+
+    <meta name="theme-color" content="black">
+    <meta name="msapplication-navbutton-color" content="black">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/resume.css" media="screen" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            background-color: #131417;
+            margin: 0;
+            font-family: "JetBrains Mono", Monaco, monospace;
+            color: #3E7EFF;
+            padding: 0 0 0 12px;
+        }
+
+        #command {
+            background-color: #131417;
+            color: #ff4500; /* Bright Orange for Commands */
+            text-shadow: 0 0 5px #ff4500, 0 0 10px #ff6347, 0 0 20px #ff4500;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hii</h1>
-    <a href="/a.json">a</a>
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="window-controls">
+                <div class="control-btn close"></div>
+                <div class="control-btn minimize"></div>
+                <div class="control-btn maximize"></div>
+            </div>
+            <span>resume.exe</span>
+        </div>
+        <div class="terminal-content">
+            <div class=console>
+                <div>
+                    <pre class="ascii">
+  ___ __   __      _              _           _        ___
+ / __|\ \ / /     /_\   _ _   ___| |_   _  _ | | ___  / __| __ _  _ _  __ _
+| (__  \ V /  _  / _ \ | ' \ (_-<| ' \ | || || ||___|| (_ |/ _` || '_|/ _` |
+ \___|  \_/  (_)/_/ \_\|_||_|/__/|_||_| \_,_||_|      \___|\__,_||_|  \__, |
+                                                                      |___/
+
+Fork/Star on <a target = "_blank" 
+href = "https://github.com/anshul-garg27/anshul-garg27.github.io/">Github</a> </pre>
+                    <div id="head">
+                        <span id="MyClockDisplay" class="clock" onload="showTime()"></span>
+                        <p class="welcome">Welcome to Anshul's web resume
+                            (start with "<strong class="bold" style="color:blue">help</strong>" if you are lost).
+                            <a href="resources/resume.pdf" target=_blank><u><strong>Download</strong></u></a> the resume.
+                        </p>
+                        Counting his breath since <span id="count-up">
+                        </span>
+                        <hr class="divider">
+                    </div>
+
+
+                    <div id="resume-container">
+                        <div id="executed_commands">
+                            <div class="typewriter"></div>
+                        </div>
+                        <div id="command-line">
+                            <span style="color:red">❯</span> <span style="color:cyan">[Anshul@root]</span>
+                            <div class="command-wrapper">
+                                <input type="text" autofocus="autofocus" id="command" placeholder="Type a command..."  />
+                                <ul id="suggestions-list"></ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Resume Sections -->
+            <!-- 1. About -->
+            <div id="about" class="topic">
+                <div><strong>About</strong></div>
+                <div>
+                    <p>
+                        His full name is Anshul Garg. He completed his Master's degree in Computer Science and Engineering from IIIT Bangalore, and a Bachelor's degree in Computer Science and Engineering from SKIT Jaipur. He is a backend-focused developer with a strong grasp of data structures, algorithms, and scalable system designs.
+                    </p>
+                    <p>
+                        Anshul is known for his collaborative and helpful nature, always ready to assist teammates or peers in tackling their technical challenges. He embraces learning as a continuous process, readily adapting to new technologies and improving his skillset to meet evolving industry demands.
+                    </p>
+                    <p>
+                        Over time, Anshul has honed his expertise in languages like Java, Python, and Golang. He has worked extensively with modern frameworks and distributed systems, consistently delivering efficient, reliable, and high-performing backend solutions.
+                    </p>
+                </div>
+                <div>
+                    Some activities and achievements he has been involved with:
+                    <ul>
+                        <li><strong>GATE 2020:</strong> Secured AIR 1343 with a score of 659.</li>
+                        <li><strong>Core Member, Gender Cell, IIIT-B:</strong> Contributed to initiatives fostering an inclusive and supportive academic environment.</li>
+                        <li><strong>Event Manager, Infinite Cultural Fest, IIIT-B:</strong> Organized and managed large-scale cultural events, enhancing campus life.</li>
+                        <li><strong>Red Hat Certified Specialist in Ansible Automation</strong></li>
+                        <li><strong>Red Hat Certified System Administrator</strong></li>
+                        <li><strong>Teaching Assistant, CS-816 Software Production Engineering, IIIT-B:</strong> Guided students in best practices, code quality, and production engineering principles.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 2. Education  -->
+<!--            <div id="education" class="topic">-->
+<!--                <div><strong>Education</strong></div>-->
+<!--                <div>-->
+<!--                    <ul>-->
+<!--                        <li><strong>IIIT Bangalore (2020 - 2022)</strong></li>-->
+<!--                        <p style="margin:0;">M.Tech in Computer Science and Engineering (AI/ML) (CGPA: 3.22/4.0)</p>-->
+<!--                        <li><strong>SKIT Jaipur (2015 - 2019)</strong></li>-->
+<!--                        <p style="margin:0;">B.Tech in Computer Science and Engineering (CGPA: 7.43/10.0)</p>-->
+<!--                        <li><strong>Maheshwari Senior Secondary School Jaipur</strong></li>-->
+<!--                        <p style="margin: 0">Class 12th(2015) - 78.80%</p>-->
+<!--                        <p style="margin: 0">Class 10th(2013) - 72.66%</p>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <div id="education" class="topic">
+                <div>
+                    <h2>Education</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <h3>IIIT Bangalore</h3>
+                            <p class="degree">M.Tech in Computer Science and Engineering (AI/ML)</p>
+                            <p class="details">2020 - 2022 | CGPA: 3.22/4.0</p>
+                        </li>
+                        <li>
+                            <h3>SKIT Jaipur</h3>
+                            <p class="degree">B.Tech in Computer Science and Engineering</p>
+                            <p class="details">2015 - 2019 | CGPA: 7.43/10.0</p>
+                        </li>
+                        <li>
+                            <h3>Maheshwari Senior Secondary School, Jaipur</h3>
+                            <p class="degree">Class 12th</p>
+                            <p class="details">2015 | Percentage: 78.80%</p>
+                            <p class="degree">Class 10th</p>
+                            <p class="details">2013 | Percentage: 72.66%</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- 3. Projects  -->
+            <div id="projects" class="topic">
+                <h2>Projects</h2>
+                <div class="projects-container">
+                    <!-- SportEase -->
+                    <div class="project-card">
+                        <h3>
+                            <a href="https://github.com/anshul-garg27/SportEase" target="_blank">SportEase</a>
+                            <span class="technologies">| FullStack, DevOps</span>
+                        </h3>
+                        <ul>
+                            <li>Implemented a web-based application to streamline the management of sports equipment and events for colleges and sports clubs.</li>
+                            <li>Configured and automated a robust CI/CD pipeline using Jenkins, and implemented a 3-tier web deployment architecture using Docker containers.</li>
+                            <li>Orchestrated multiple Docker-container applications using Docker Compose, enhancing efficiency and reliability.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Expense Tracker -->
+                    <div class="project-card">
+                        <h3>
+                            <a href="https://github.com/anshul-garg27/ExpenseTracker" target="_blank">Expense Tracker</a>
+                            <span class="technologies">| Python, Django</span>
+                        </h3>
+                        <ul>
+                            <li>Developed an expense tracker application that analyzes and categorizes expenses, similar to Splitwise.</li>
+                            <li>Users can add contacts, split expenses, simplify settlements, and track spending habits.</li>
+                            <li>Future enhancements include expense capping and automated alerts when expenses cross predefined thresholds.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Cube Column Store -->
+                    <div class="project-card">
+                        <h3>
+                            <a href="https://github.com/anshul-garg27/ColumnStore-DataBase-for-Cube-DB" target="_blank">Cube Column Store</a>
+                            <span class="technologies">| Java</span>
+                        </h3>
+                        <ul>
+                            <li>(Apr 2021) Implemented a Java-based columnar storage technique for a Data Cube, enabling faster OLAP queries.</li>
+                            <li>Enhanced data processing speed and query performance, reducing query times by up to 3x for large datasets.</li>
+                            <li>Supported OLAP operations like SLICE, DICE, and ROLL-UP for in-depth data insights.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Banking Management System -->
+                    <div class="project-card">
+                        <h3>
+                            Banking Management System
+                            <span class="technologies">| C, Linux</span>
+                        </h3>
+                        <ul>
+                            <li>Recreated a real-life banking management system using system calls in C.</li>
+                            <li>Implemented socket programming for secure transactions and database updates.</li>
+                            <li>Added file locking to prevent concurrent data access, ensuring consistency in a multi-threaded environment.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Better Reads -->
+                    <div class="project-card">
+                        <h3>
+                            Better Reads
+                            <span class="technologies">| Java, Spring Boot, Cassandra</span>
+                        </h3>
+                        <ul>
+                            <li>(Dec 2022) Built a platform to help users discover and track reading habits with a large dataset of books and user reviews.</li>
+                            <li>Leveraged Cassandra’s scalability and performance for fast query processing and handling large data volumes.</li>
+                            <li>Provided features for managing reading lists, viewing recommendations, and analyzing user reviews.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 4. Experience  -->
+    <div id="experience" class="topic">
+        <div><strong>Experience</strong></div>
+        <div>
+            <!-- Walmart -->
+            <!-- Walmart -->
+            <article class="experience-entry">
+                <h3>Walmart (NRT - Data Venture)</h3>
+                <p><strong>Role:</strong> SDE-III | <strong>Technologies:</strong> Java, Spring Boot 3, Kafka, PostgreSQL, Azure Cosmos DB, Grafana</p>
+                <p><strong>Location:</strong> Bangalore | <strong>Dates:</strong> Jun 2024 – Current</p>
+                <ul>
+                    <li>Led a critical migration to Spring Boot 3 and Java 17, ensuring zero downtime and resolving high-severity vulnerabilities.</li>
+                    <li>Revamped NRT application controllers using OpenAPI Specification, improving maintainability and documentation clarity.</li>
+                </ul>
+            </article>
+
+            <!-- Good Creator Co. -->
+            <article class="experience-entry">
+                <h3>Good Creator Co. (SaaS Social Media Analytics Platform)</h3>
+                <p><strong>Role:</strong> SDE-I | <strong>Technologies:</strong> Java, Python, Golang, RabbitMQ, Postgres, ClickHouse, Airflow, DBT, Spring Boot, AWS</p>
+                <p><strong>Location:</strong> Bangalore | <strong>Dates:</strong> Feb 2023 – May 2024</p>
+                <ul>
+                    <li>Spearheaded initial development and continuous improvement of a SaaS-based analytics platform, improving data pipeline performance by 25% and reducing costs by 30%.</li>
+                    <li>Integrated Apache Spark for distributed computing, cutting complex analytics task times by 40%.</li>
+                    <li>Architected an asynchronous data system (Python) handling 10 million daily scrapes, delivering real-time insights via PostgreSQL.</li>
+                    <li>Utilized Spark SQL and DataFrames in Scala to enhance ClickHouse query performance for data marts.</li>
+                    <li>Orchestrated scalable ETL pipelines with PySpark and Airflow, supporting ingestion of over 10 million data points daily.</li>
+                    <li>Built data stack and pipelines for the Leaderboard module, enabling influencer ranking by key metrics.</li>
+                    <li>Improved data processing speed by 50% using DBT and ClickHouse data marts.</li>
+                    <li>Revamped a Postgres logging system into an event-driven architecture (RabbitMQ, Python, Golang), reducing log retrieval times threefold and managing billions of logs in ClickHouse.</li>
+                    <li>Developed Genre Insights and Social Keyword Analytics (Python, Golang, ClickHouse), boosting user engagement by 10%.</li>
+                    <li>Deployed an asset upload system to process 8 million images daily on S3 at minimal cost.</li>
+                    <li>Launched a self-service Smart Campaign module, increasing platform users by 30% through programmatic campaigns and automated reward ladders.</li>
+                    <li>Constructed a content verification module eliminating 100% of manual filtering.</li>
+                    <li>Enhanced observability (Grafana, Prometheus, Slack) reducing downtime by 70%.</li>
+                </ul>
+            </article>
+
+            <!-- PayU (SDE-I) -->
+            <article class="experience-entry">
+                <h3>PayU (API Lending)</h3>
+                <p><strong>Role:</strong> SDE-I | <strong>Technologies:</strong> Java, Spring Boot, Python, Django, AWS, RabbitMQ, PostgreSQL</p>
+                <p><strong>Location:</strong> Bangalore | <strong>Dates:</strong> July 2022 – Feb 2023</p>
+                <ul>
+                    <li>Contributed to the API lending platform enabling partner integrations for automated loan disbursals.</li>
+                    <li>Increased loan volume by 40% by enabling multi-source lending post-disbursal.</li>
+                    <li>Scaled business by reducing loan journey issues from 4.6% to under 0.3% through new partner onboarding and process optimizations.</li>
+                    <li>Optimized APIs, cutting loan disbursal turnaround from 3.2 to 1.1 minutes, improving user experience.</li>
+                    <li>Implemented Django throttling for rate limiting, ensuring system stability and performance under heavy loads.</li>
+                </ul>
+            </article>
+
+            <!-- PayU (Intern) -->
+            <article class="experience-entry">
+                <h3>PayU (API Lending) - Intern</h3>
+                <p><strong>Role:</strong> Software Engineer Intern | <strong>Technologies:</strong> Java, Spring Boot, Python, Django, AWS, PostgreSQL</p>
+                <p><strong>Location:</strong> Bangalore | <strong>Dates:</strong> Jan 2022 – July 2022</p>
+                <ul>
+                    <li>Refactored the Loan Origination System (LOS) in Java, improving code quality and maintainability, increasing test coverage from 30% to 83%, and reducing production bugs.</li>
+                    <li>Automated code quality checks and static analysis using SonarQube and GitHub Actions for continuous improvement.</li>
+                    <li>Implemented Flyway DB migrations, enhancing deployment reliability and reducing developer overhead.</li>
+                </ul>
+            </article>
+    </div>
+
+        <div id="ls" class="topic">
+            <h2>Available Commands</h2>
+            <p class="commands-list">
+                about, education, projects, experience, skills, contact, download, theme, clear.
+            </p>
+        </div>
+<!--    <div id="ls" class="topic">-->
+<!--        <div>-->
+<!--            <div><strong>Available Commands</strong></div>-->
+<!--            <p>about, education, projects, experience, skills,-->
+<!--                contact, download, theme, clear, quote, joke, matrix, easteregg,</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+    <!-- 5. Skills  -->
+        <!-- Skills Section -->
+        <div id="skills" class="topic">
+            <div>
+                <h2>Technical Skills</h2>
+<!--                <canvas id="skillsChart" width="400" height="400"></canvas>-->
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Java, Python, Golang, C++, C, HTML, CSS, JavaScript</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Frameworks</h3>
+                    <p>Spring Boot 3, Hibernate, Django, FastAPI</p>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <p>Docker, Ansible, Jenkins, Git, GitHub, Kafka, RabbitMQ, Apache Airflow, DBT, ETL, Grafana, Prometheus, ELK Stack, AWS Kinesis, AWS SQS, AWS Lambda, AWS S3, AWS EC2</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <p>PostgreSQL, MySQL, Azure Cosmos DB, ClickHouse, Redis</p>
+                </div>
+            </div>
+
+            <div>
+                <h2>Coursework</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <ul>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Machine Learning</li>
+                        <li>Functional Programming</li>
+                        <li>Design and analysis of Algorithms</li>
+                        <li>Object Oriented Programming</li>
+                        <li>Operating System</li>
+                        <li>Theory of Computation</li>
+                        <li>Databases</li>
+                        <li>Artificial Intelligence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div id="contact" class="topic">
+                <h2>Contact</h2>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:anshulgarg.garg509@gmail.com" target="_blank">anshulgarg.garg509@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/anshullkgarg/" target="_blank">LinkedIn Profile</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/anshul-garg27" target="_blank">GitHub Profile</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/anshullkgarg/" target="_blank">Instagram Profile</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-code"></i>
+                        <a href="https://leetcode.com/u/anshulkgarg/" target="_blank">LeetCode Profile</a>
+                    </li>
+                </ul>
+            </div>
+
+
+    <!-- 7. Download -->
+    <div id="download" class="topic">
+        <p>Downloading resume..<br>
+            Note: If you are facing any problem, then click <strong><a target=_blank
+                    href="resources/resume.pdf">HERE</a></strong> to
+            download
+        </p>
+    </div>
+
+    <!-- 8. Error -->
+            <div id="error" class="topic">
+                <p class="error-message"><strong>Error</strong>: Command not found!</p>
+                <pre class="error-details">
+        < Enter <strong><i>help</i></strong> to get a list of all available commands >
+        -----------------------------------------------------------
+            \   ^__^
+             \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
+    </pre>
+            </div>
+
+
+            <!-- 9. clear -->
+    <div id="clear" class="topic"></div>
+
+    <!-- 10. Help -->
+            <div id="help" class="topic">
+                <h2>Help Commands</h2>
+                <div class="help-container">
+                    <table class="help-table">
+                        <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>about</td>
+                            <td>Read more about me</td>
+                        </tr>
+                        <tr>
+                            <td>education</td>
+                            <td>Read about my qualifications</td>
+                        </tr>
+                        <tr>
+                            <td>projects</td>
+                            <td>Read some of my amazing projects</td>
+                        </tr>
+                        <tr>
+                            <td>experience</td>
+                            <td>See my past experience</td>
+                        </tr>
+                        <tr>
+                            <td>skills</td>
+                            <td>See my skills</td>
+                        </tr>
+                        <tr>
+                            <td>contact</td>
+                            <td>Find ways to contact me</td>
+                        </tr>
+                        <tr>
+                            <td>download</td>
+                            <td>Download my resume</td>
+                        </tr>
+                        <tr>
+                            <td>theme</td>
+                            <td>
+                                Change the theme of the terminal.
+                                <br><em>Available themes:</em> dark, light, monokoi, sublime, light-dark(default)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>clear</td>
+                            <td>Clear the window</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Resume sections end -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type='text/javascript' src="js/resume.js"></script>
+        </div>
+    </div>
 </body>
+
 </html>
